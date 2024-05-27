@@ -1,0 +1,163 @@
+#root,
+.App {
+  @media screen and (min-width: 600px) {
+    min-width: 1024px;
+  }
+  height: 100%;
+}
+
+html.ant-scrolling-effect,
+.App {
+  font-family: @font-family;
+  display: flex;
+  color: #333;
+  .ant-menu-inline-collapsed {
+    width: 50px;
+  }
+  .content {
+    flex: 1;
+    height: 100%;
+    overflow: auto;
+  }
+  .ant-table .ant-table-tbody td {
+    line-height: 24px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .ant-table thead {
+    line-height: 2.5;
+  }
+  .srm {
+    .ant-table thead {
+      line-height: 1;
+    }
+  }
+  .ant-divider-vertical {
+    border-left: 1px solid rgba(0, 0, 0, 0.16);
+  }
+
+  .table-handle {
+    padding: 10px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    &-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .table-more-options {
+      .ant-btn {
+        margin-left: 8px;
+      }
+    }
+  }
+  .searchInput {
+    width: 300px;
+  }
+  .ant-pagination-total-text {
+    line-height: 32px;
+    margin-right: 16px;
+  }
+  // table
+  .ant-table {
+    margin-top: 10px;
+    border-bottom: 1px solid #dbdee3;
+    // border-radius: 2px;
+    .ant-table-thead th {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      color: #666;
+      // font-size: 12px;
+    }
+    .ant-table-tbody {
+      td {
+        height: 40px;
+        line-height: 28px;
+        border-top: 1px solid #dbdee3;
+        border-bottom: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: #666;
+        // font-size: 12px;
+      }
+      .ant-table-expanded-row {
+        .ant-table-wrapper {
+          overflow: hidden;
+        }
+        .ant-table {
+          margin: 0 0 10px;
+        }
+      }
+    }
+  }
+}
+
+.textAlignRight {
+  text-align: right;
+}
+
+.back {
+  font-size: @baseFontSizeMiddle;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  &:hover {
+    color: @primary-color;
+  }
+}
+
+.table-active-text {
+  color: @primary-color;
+  cursor: pointer;
+}
+.table-operator-area {
+  display: flex;
+  flex-direction: row;
+  div {
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  &-normal {
+    color: @primary-color;
+  }
+  &-warning {
+    color: @colorRed2;
+  }
+}
+// input
+input::placeholder {
+  // font-size: 12px;
+  line-height: 18px;
+}
+
+// select
+.ant-select-selection-placeholder {
+  font-size: 12px;
+}
+.ant-select {
+  .overflow-586 {
+    min-width: 586px !important;
+  }
+  .overflow-230 {
+    min-width: 230px !important;
+  }
+}
+
+.ant-drawer-body {
+  padding: 16px !important;
+}
+
+// srm beginning
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+// srm ending
+
+.ant-input.promql-input {
+  &.readonly {
+    border: none;
+    padding: 4px 0px;
+  }
+}

@@ -1,0 +1,5 @@
+Flask
+requests
+psycopg2
+protobuf
+minio

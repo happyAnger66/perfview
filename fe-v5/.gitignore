@@ -1,0 +1,12 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+.vscode
+.idea/*
+pub
+deploy.sh
+src/Packages/*
+stats.html
+build.sh
